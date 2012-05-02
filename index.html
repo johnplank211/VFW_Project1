@@ -1,4 +1,10 @@
+
 <!DOCTYPE html>
+<!-- John Plank
+Term 6
+VFW Project 1
+Apocalypse Checklist -->
+
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -11,33 +17,30 @@
 	<body>
 		<h1>Apocalypse Checklist</h1> 
 		<h3>We know it's going to happen, but which one is it and are you ready?</h3>
-		<form action= "" method= "post">
+		<form action= "#" method= "post">
 			<fieldset>
 				<legend>What apocalypse are you currently experiencing</legend>
-				<ul>
-					<li><input type="radio" id="natural" /><label for="Natural">Natural</label></li>
-					<li><input type="radio" id="nuclear" /><label for="nuclear">nuclear</label></li>
-					<li><input type="radio" checked value="Zombie" id="zombie" /><label for="zombie">Zombie</label></li>
-				</ul>
+					<ul>
+						<li><input type="radio" id="natural" name= "apocalypse" /><label for="natural">Natural</label></li>
+						<li><input type="radio" id="nuclear" name= "apocalypse" /><label for="nuclear">Nuclear</label></li>
+						<li><input type="radio" checked value="Zombie" id="zombie" name= "apocalypse" /><label for="zombie">Zombie</label></li>
+					</ul>
 			</fieldset>
-		<h2>Start adding days to your life here</h2>
-			<FORM METHOD="LINK" ACTION="page1.htm">
+			<fieldset>	
+				<legend>If someone finds this please send accordingly.</legend>
+					<ul>
+						<li>Your personal info</li>
+						<li><label for="startdate">The world ended:</label> <input type="date" min="1904-03-17" max="1904-05-17" ➥id="startdate" name="startdate" required aria-required="true" ➥placeholder="1911-03-17"></li><br>
+				        <li><label for="email">Your love one email address is</label> <input type="email" id="email" placeholder= "example@email.com" /></li>
+						<li><label for= "comments">Death letter here:</label><textarea id= "comments" ></textarea></li>
+					</ul>
+			</fieldset>
+			<h2>Start adding days to your life here</h2>
 				<a href="addItem.html">Add Life</a>
-				
-			</FORM>
-			
-
-
-
-
-
-
-
-
-
-				</form>
-				</body>
-
+				<input type= "hidden" value= "true" /></li>
+		</form>
+	</body>
+</html>
 
 
 
