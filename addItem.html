@@ -2,15 +2,23 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<meta name= "description" content= "A checklist for your life" />
-		<meta name= "keyword"     content= "apocalypse, checklist, Full Sail, mobile development" />
-		<meta name= "robots"      content= "index, follow" />
-		<meta name= "viewport"    content= "user-scalable=no, width=device-width" />
+		<meta name="description" content="A checklist for your life"/>
+		<meta name="keyword"     content="apocalypse, checklist, Full Sail, mobile development"/>
+		<meta name="robots"      content="index, follow"/>
+		<meta name="viewport"    content="user-scalable=no, width=device-width"/>
 		<title>John Plank: Apocalypse Checklist</title>
 	</head>
 	<body>
 		<h1>Apocalypse Checklist</h1> 
-		<form action= "#" method= "post">
+		<form action="#" method="post">
+			<fieldset>
+				<legend>What apocalypse are you currently experiencing</legend>
+					<ul>
+						<li><input type="radio" id="natural" name="apocalypse"/><label for="natural">Natural</label></li>
+						<li><input type="radio" id="nuclear" name="apocalypse"/><label for="nuclear">Nuclear</label></li>
+						<li><input type="radio" checked value="Zombie" id="zombie" name="apocalypse"/><label for="zombie">Zombie</label></li>
+					</ul>				
+			</fieldset>
 			<fieldset>
 				<legend>Zombie Apocalypse Checklist</legend>
 					<ul>
@@ -27,38 +35,44 @@
 						<li><input type="checkbox" id="boots" /><label for="boots">Boots</label></li>
 						<li><input type="checkbox" id="matches" /><label for="matches">Matches</label></li>
 						<li><input type="checkbox" id="p38" /><label for="p38">P38</label></li>
-						<li><input type="checkbox" checked value= intestinal fortitude id="intestinal fortitude" /><label for="intestinal fortitude">Intestinal Fortitude</label></li>
+						<li><input type="checkbox" checked value="intestinal fortitude" id="intestinal fortitude"/><label for="intestinal fortitude">Intestinal Fortitude</label></li>
 					</ul>
 			</fieldset>
 		<h2>Add additional items for comfort only. </h2><small> Remeber if you plan to travel on foot weight is not yor friend.</small>
-		<fieldset>
-				<legend>Additonal items</legend>
-				<ul>
-					<li><label for="item">Item</label><input type= "text" id= "item" /></li>
-					<li><label for="item">Item</label><input type= "text" id= "item" /></li>
-					<li><label for="item">Item</label><input type= "text" id= "item" /></li>
-					<li><label for="item">Item</label><input type= "text" id= "item" /></li>
-					<li><label for="item">Item</label><input type= "text" id= "item" /></li>
-					<li><label for="item">Item</label><input type= "text" id= "item" /></li>
-				</ul>
-		</fieldset>
-		<fieldset>
-			<legend>Last questions</legend>
-			<li>
-				<label for = "fear" >Fear level</label>
-				<select id = "fear" >
-					<option value = "In denial still">In denial still</option>
-					<option value = "Oops I crapped my pants">Oops I crapped my pants</option>
-					<option value = "Psalm 144:1">Psalm 144:1</option>
-				</select>
-			</li>
+			<fieldset>
+					<legend>Additonal items</legend>
+					<ul>
+						<li><label for="item">Item</label><input type="text" id="item" /></li>
+						<li><label for="item">Item</label><input type="text" id="item" /></li>
+						<li><label for="item">Item</label><input type="text" id="item" /></li>
+						<li><label for="item">Item</label><input type="text" id="item" /></li>
+						<li><label for="item">Item</label><input type="text" id="item" /></li>
+						<li><label for="item">Item</label><input type="text" id="item" /></li>
+					</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Last questions</legend>
+				<li>
+					<label for ="fear" >Fear level</label>
+					<select id ="fear" >
+						<option value ="In denial still">In denial still</option>
+						<option value ="Oops I crapped my pants">Oops I crapped my pants</option>
+						<option value ="Psalm 144:1">Psalm 144:1</option>
+					</select>
+				</li>		
+				<li>How would you rate your readiness?</li>
+					<label for="rating">On a scale of 1 to 10:</label>
+					<input type="range" min="1" max="10" name="rating" type="range"/>
+						<legend>If someone finds this please send accordingly.</legend>
+						<ul>
+							<li>Your personal info</li>
+								<li><label for="startdate">The world ended:</label><input type="date" id="startdate" name="startdate" required aria-required="true"/></li>
+						        <li><label for="email">Your love one email address is</label><input type="email" id="email" placeholder="example@email.com"/></li>
+								<li><label for="comments">Death letter here:</label><textarea id="comments"></textarea></li>
+						</ul>
+			</fieldset>
 		</form>
-			<h5>How would you rate your readiness?</5><br>
-				<label for="rating">On a scale of 1 to 10:</label>
-				<input type="range" min="1" max="10" name="rating" type="range"><br>
-		</fieldset>
-
-	    <input type= "submit" value= "Am I Ready?" />
+	    <input type="submit" value="Am I Ready?"/>
 	</body>
 </html>
 
