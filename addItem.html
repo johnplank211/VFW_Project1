@@ -10,52 +10,60 @@
 	</head>
 	<body>
 		<h1>Apocalypse Checklist</h1> 
-		<form action= "" method= "post">
+		<form action= "#" method= "post">
 			<fieldset>
 				<legend>Zombie Apocalypse Checklist</legend>
-				<ul>
-					<li><input type="checkbox" id="Firearm" /><label for="Firearm">Firearm</label></li>
-					<li><input type="checkbox" id="Ammo" /><label for="Ammo">Ammo</label></li>
-					<li><input type="checkbox" id="Mele Weapon" /><label for="Mele Weapon">Mele Weapon</label></li>
-					<li><input type="checkbox" id="Canned Food" /><label for="Canned Food">Canned Food</label></li>
-					<li><input type="checkbox" id="Water" /><label for="Water">Water</label></li>
-					<li><input type="checkbox" id="Chain Mesh Shark Suite" /><label for="Chain Mesh Shark suite">Chain Mesh Shark suite <small>:Hard Find</small></label></li>
-					<li><input type="checkbox" id="Topographical map" /><label for="Topographical map">Topographical map</label></li>
-					<li><input type="checkbox" id="Leatherman" /><label for="Leatherman">Leatherman</label></li>
-					<li><input type="checkbox" id="Rucksack" /><label for="Rucksack">Rucksack</label></li>
-					<li><input type="checkbox" id="Boots" /><label for="Boots">Boots</label></li>
-					<li><input type="checkbox" id="Matches" /><label for="Matches">Matches</label></li>
-					<li><input type="checkbox" id="P38" /><label for="P38">P38</label></li>
-					<li><input type="checkbox" checked value= Intestinal Fortitude id="Intestinal Fortitude" /><label for="Intestinal Fortitude">Intestinal Fortitude</label></li>
-				</ul>
+					<ul>
+						<li>Check what you have, get what you don't</li>
+						<li><input type="checkbox" id="firearm" /><label for="firearm">Firearm</label></li>
+						<li><input type="checkbox" id="ammo" /><label for="ammo">Ammo</label></li>
+						<li><input type="checkbox" id="mele Weapon" /><label for="mele Weapon">Mele Weapon</label></li>
+						<li><input type="checkbox" id="canned Food" /><label for="canned Food">Canned Food</label></li>
+						<li><input type="checkbox" id="water" /><label for="water">Water</label></li>
+						<li><input type="checkbox" id="chain Mesh Suite" /><label for="chain Mesh Suite">Chain Mesh Suite <small>:$23,000</small></label></li>
+						<li><input type="checkbox" id="topographical map" /><label for="topographical map">Topographical map</label></li>
+						<li><input type="checkbox" id="leatherman" /><label for="leatherman">Leatherman</label></li>
+						<li><input type="checkbox" id="rucksack" /><label for="rucksack">Rucksack</label></li>
+						<li><input type="checkbox" id="boots" /><label for="boots">Boots</label></li>
+						<li><input type="checkbox" id="matches" /><label for="matches">Matches</label></li>
+						<li><input type="checkbox" id="p38" /><label for="p38">P38</label></li>
+						<li><input type="checkbox" checked value= intestinal fortitude id="intestinal fortitude" /><label for="intestinal fortitude">Intestinal Fortitude</label></li>
+					</ul>
 			</fieldset>
-		<h2>Add additional for comfort only. </h2><small> Remeber if you plan to travel on foot weight is not yor friend.</small>
+		<h2>Add additional items for comfort only. </h2><small> Remeber if you plan to travel on foot weight is not yor friend.</small>
 		<fieldset>
 				<legend>Additonal items</legend>
 				<ul>
-					<li><label for="Item">Item</label><input type= "text" id= "Item" /></li>
-					<li><label for="Item">Item</label><input type= "text" id= "Item" /></li>
-					<li><label for="Item">Item</label><input type= "text" id= "Item" /></li>
-					<li><label for="Item">Item</label><input type= "text" id= "Item" /></li>
-					<li><label for="Item">Item</label><input type= "text" id= "Item" /></li>
-					<li><label for="Item">Item</label><input type= "text" id= "Item" /></li>
+					<li><label for="item">Item</label><input type= "text" id= "item" /></li>
+					<li><label for="item">Item</label><input type= "text" id= "item" /></li>
+					<li><label for="item">Item</label><input type= "text" id= "item" /></li>
+					<li><label for="item">Item</label><input type= "text" id= "item" /></li>
+					<li><label for="item">Item</label><input type= "text" id= "item" /></li>
+					<li><label for="item">Item</label><input type= "text" id= "item" /></li>
 				</ul>
 		</fieldset>
-		<li>
-			<label for = "Fear" >Fear level</label>
-			<select id = "Fear" >
-				<option value = "In denial still">In denial still</option>
-				<option value = "Oops I crapped my pants">Oops I crapped my pants</option>
-				<option value = "Psalm 144:1">Psalm 144:1</option>
+		<fieldset>
+			<legend>Last questions</legend>
+			<li>
+				<label for = "fear" >Fear level</label>
+				<select id = "fear" >
+					<option value = "In denial still">In denial still</option>
+					<option value = "Oops I crapped my pants">Oops I crapped my pants</option>
+					<option value = "Psalm 144:1">Psalm 144:1</option>
+				</select>
+			</li>
+		</form>
+			<h5>How would you rate your readiness?</5><br>
+				<label for="rating">On a scale of 1 to 10:</label>
+				<input type="range" min="1" max="10" name="rating" type="range"><br>
+		</fieldset>
+
+	    <input type= "submit" value= "Am I Ready?" />
+	</body>
+</html>
 
 
 
 
 
 
-
-
-
-
-				</form>
-				</body>
